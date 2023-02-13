@@ -1,2 +1,2 @@
 #!/bin/bash
-head 12-newest_files | fmt | sort
+head 12-newest_files | grep | sort
