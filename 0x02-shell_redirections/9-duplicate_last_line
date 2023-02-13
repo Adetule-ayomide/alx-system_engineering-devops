@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n +NUM iacta
+tail -n 1 iacta
