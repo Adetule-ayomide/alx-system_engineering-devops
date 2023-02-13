@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /etc/passwd | fmt | pr
+cat /etc/passwd | fmt
