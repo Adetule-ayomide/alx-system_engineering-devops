@@ -1,2 +1,2 @@
 #!/bin/bash
-13-unique grep | fmt | sort
+sort | uniq -u
