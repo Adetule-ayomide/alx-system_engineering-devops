@@ -7,7 +7,7 @@
 #Otherwise, displays the number
 #In a list format
 
-for ((i=0; i <= 100; i++))
+for ((i=1; i < 101; i++))
 do
 	if [ $((i % 15)) ==  0 ]
 	then
