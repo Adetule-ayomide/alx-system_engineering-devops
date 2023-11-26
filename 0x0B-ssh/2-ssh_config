@@ -3,4 +3,8 @@
 # let’s configure it to our needs so that you can connect to a server without
 # typing a password. Share your SSH client configuration in your answer file.
 
-~/.ssh/school/ssh_config
+Host 231851-web-01
+    HostName 34.229.72.200
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
