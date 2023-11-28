@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
 # Configure your Nginx server so that i will have a custom error page
+
 sudo  apt-get -y update
 sudo apt-get -y install nginx
-
-sudo ufw allow 'Nginx HTTP'
-
-string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/adetule-ayomide permanent;"
-
-sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
-
-# creating a custom 404 page
 
 echo "Ceci n'est pas une page" | sudo tee  /var/www/html/404.html
 
@@ -17,5 +10,5 @@ new_string="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation 
 
 sudo sed -i "s/listen 80 default_server;/$new_string/" /etc/nginx/sites-enabled/default
 
-# restart nginx 
+#restart nginx
 sudo service nginx restart
