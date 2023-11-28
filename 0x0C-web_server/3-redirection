@@ -4,6 +4,7 @@
 
 sudo  apt-get -y update
 sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
 
 string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/adetule-ayomide permanent;"
 
