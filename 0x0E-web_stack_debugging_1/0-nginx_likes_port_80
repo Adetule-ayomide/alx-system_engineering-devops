@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # a Bash script that configures a server to the above requirements
 
-sudo rm etc/nginx/sites-enabled/default
-# sudo sed -i '/listen 80;/c\    listen 80 default_server;' /etc/nginx/sites-available/default
+sudo rm /etc/nginx/sites-enabled/default
+
 sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 
 sudo service nginx restart
