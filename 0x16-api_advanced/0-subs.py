@@ -9,7 +9,8 @@ import requests
 def number_of_subscribers(subreddit):
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
 
-    headers = {'User-Agent': '0x16-api_advanced_project/1.0.0 (by /u/adetule-ayomide)'}
+    headers = {'User-Agent': '0x16-api_advanced:project:\
+v1.0.0 (by /u/adetule-ayomide)'}
 
     response = requests.get(url, headers=headers)
 
@@ -23,4 +24,3 @@ def number_of_subscribers(subreddit):
     else:
         print(f"Error: {response.status_code}")
         return 0
-
